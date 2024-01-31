@@ -3,7 +3,7 @@ const app=express();
 const cors=require("cors");
 app.use(
     cors({
-        origin:"",
+        origin:"https://portfolio-frontend-pawanx64.vercel.app",
         methods:["POST","GET"],
         credentials: true,
     })

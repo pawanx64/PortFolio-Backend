@@ -3,7 +3,9 @@ const app=express();
 const cors=require("cors");
 app.use(
     cors({
-        origin:"http://localhost:5000/",
+        origin:"",
+        methods:["POST","GET"],
+        credentials: true,
     })
 );
 require("dotenv").config();

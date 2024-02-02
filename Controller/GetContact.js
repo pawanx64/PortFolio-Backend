@@ -3,10 +3,10 @@ const Contact=require("../Model/Contact");
 
 exports.getcontacts=async(req,res)=>{
     try{
-        const constacts=await Contact.find({});
+        const contacts=await Contact.find({});
         res.status(200).json({
             success : true,
-            data:Contact,
+            data:contacts,
             message:"Entire Contact Data Is Fetched",
         });
     }

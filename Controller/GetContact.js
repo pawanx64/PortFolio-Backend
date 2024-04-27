@@ -16,6 +16,6 @@ exports.getcontacts=async(req,res)=>{
             success:false,
             error:err.message,
             message:"Server Error",
-        });
+        })
     }
 };

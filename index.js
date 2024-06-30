@@ -27,6 +27,3 @@ app.listen(5000,()=>{
 const dbConnect=require("./Config/database");
 dbConnect();
 
-app.get("/",(req,res)=>{
-    res.send(`<h1>This Is HomePage</h1>`);
-})
